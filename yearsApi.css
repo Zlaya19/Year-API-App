@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #444;
+    font-family: 'Bangers', cursive;
+}
+
+h2 {
+    font-size: 54px;
+}
+
+.headline {
+    text-align: center;
+    padding: 15px 35px;
+    box-shadow: 0 0 12px 1px #222, 0 0 12px 1px #222;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background: #a59312;
+}
+
+#paragraph {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-shadow: 0 0 2px grey, 0 0 2px black;
+}
+
+#input {
+    padding: 7px 45px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    box-shadow: 0 0 4px 2px #333, 0 0 4px 2px #333;
+}
+
+#container {
+    width: 600px;
+    min-height: 200px;
+    background: #bca814;
+    padding: 25px;
+    margin: 50px auto;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    box-shadow: 0 0 25px 1px #222, 0 0 25px 1px #222;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#output {
+    width: 100%;
+    min-height: 100px;
+    background: #d4bd17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 15px;
+    font-size: 28px;
+    box-shadow: 0 0 14px 1px #111, 0 0 14px 1px #222;
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #container {
+        width: 100%;
+    }
+
+    .headline {
+        width: 70%;
+        font-size: 28px;
+        padding: 15px 15px;
+    }
+
+    
+    #input {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    /* #container {
+        width: 300px;
+    } */
+    
+    .headline {
+        width: 80%;
+        font-size: 26px;
+        padding: 15px 5px;
+    }
+
+    #input {
+        width: 220px;
+    }
+
+    #output {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .headline {
+    width: 80%;
+    font-size: 22px;
+    padding: 15px 5px;
+    }
+}
